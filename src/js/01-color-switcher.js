@@ -9,17 +9,17 @@ startBtn.addEventListener('click', colorSwift)
 stopBtn.addEventListener('click', swiftStop)
 
 function colorSwift() {
+  colorInterval = setInterval(getColor, 1000)
   startBtn.disabled = true
   stopBtn.disabled = false
-    colorInterval = setInterval(getColor, 1000)
 }
 function getColor() {
   document.body.style.background = getRandomHexColor()
   color.textContent = document.body.style.background
 }
 function swiftStop() {
+  clearInterval(colorInterval);
   startBtn.disabled = false
   stopBtn.disabled = true
-    clearInterval(colorInterval);
  }
 
