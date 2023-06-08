@@ -4,7 +4,7 @@ function getRandomHexColor() {
 const startBtn = document.querySelector('button[data-start]')
 const stopBtn = document.querySelector('button[data-stop]')
 
-
+stopBtn.disabled = true
 startBtn.addEventListener('click', colorSwift)
 stopBtn.addEventListener('click', swiftStop)
 
