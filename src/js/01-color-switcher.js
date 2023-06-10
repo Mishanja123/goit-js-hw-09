@@ -15,7 +15,7 @@ function colorSwift() {
 }
 function getColor() {
   document.body.style.background = getRandomHexColor()
-  color.textContent = document.body.style.background
+
 }
 function swiftStop() {
   clearInterval(colorInterval);
